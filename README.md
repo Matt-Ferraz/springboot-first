@@ -1,5 +1,7 @@
-# springboot-first
-A simple project using Java Spring to practice 
+# Enterprise CMS
+A simple WebApp to manage users on different departments 
+![plot](./DB_RELATION.png)
+
 # Setup
 ## Configuration
  Make sure to install Spring Boot, you can check it on the [`official documentation`](https://spring.io)
