@@ -7,7 +7,7 @@ A simple WebApp to manage users on different departments
  Make sure to install Spring Boot, you can check it on the [`official documentation`](https://spring.io)
 ## Cloning repository to your machine
 ```
-$ git clone https://github.com/Matt-Ferraz/springboot-first
+$ git clone https://github.com/Matt-Ferraz/springboot-first.git
 ```
 ## Running the app
 ```
