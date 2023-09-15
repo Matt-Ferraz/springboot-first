@@ -1,5 +1,5 @@
 # Enterprise CMS
-A simple WebApp to manage users on different departments 
+A simple WebApp to manage users on different departments
 ![plot](./DB_RELATION.png)
 
 # Setup
