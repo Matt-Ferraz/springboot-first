@@ -14,5 +14,3 @@ $ git clone https://github.com/Matt-Ferraz/springboot-first.git
 $ mvn spring-boot:run
 ```
 This command will install all dependencies from pom.xml and start the app on PORT 8080
-
-outro teste
