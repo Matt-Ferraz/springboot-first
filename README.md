@@ -19,7 +19,9 @@ This command will install all dependencies from pom.xml and start the app on POR
 It is important that you have the database file in the /User/{username}/ with the name following the application.properties file.
 
 ## SQL Script
-To populate the database with SQL statements for testing your application, use the following command on the h2-console.
+To populate the database with SQL statements for testing your application, running the application will automatically run the `import.sql` file inside `src/resources` or yuo can use the following command on the h2-console manually.
+
+
 ```
 INSERT INTO tb_department(name) VALUES ('Gestão');
 INSERT INTO tb_department(name) VALUES ('Informática');
