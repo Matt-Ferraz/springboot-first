@@ -17,7 +17,7 @@ This command will install all dependencies from pom.xml and start the app on POR
 
 ## Database 
 It is important that you have the database file in the /User/{username}/ with the name following the application.properties file. And run the following command to create the tables needed for the database.
-```
+```SQL
 CREATE TABLE tb_user (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
@@ -35,7 +35,7 @@ CREATE TABLE tb_department (
 To populate the database with SQL statements for testing your application, running the application will automatically run the `import.sql` file inside `src/resources` or yuo can use the following command on the h2-console manually.
 
 
-```
+```SQL
 INSERT INTO tb_department(name) VALUES ('Gestão');
 INSERT INTO tb_department(name) VALUES ('Informática');
 
