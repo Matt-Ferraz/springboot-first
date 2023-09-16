@@ -16,8 +16,21 @@ $ mvn spring-boot:run
 This command will install all dependencies from pom.xml and start the app on PORT 8080
 
 ## Database 
-It is important that you have the database file in the /User/{username}/ with the name following the application.properties file.
-
+It is important that you have the database file in the /User/{username}/ with the name following the application.properties file. And run the following command to create the tables needed for the database.
+```
+CREATE TABLE tb_user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    department_id INT,
+    -- Add more columns as needed
+);
+CREATE TABLE tb_department (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    -- Add more columns as needed
+);
+```
 ## SQL Script
 To populate the database with SQL statements for testing your application, running the application will automatically run the `import.sql` file inside `src/resources` or yuo can use the following command on the h2-console manually.
 
