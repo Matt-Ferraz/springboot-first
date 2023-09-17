@@ -14,16 +14,17 @@ import com.ferraz_dev.userdept.entities.Department;
 
 import com.ferraz_dev.userdept.repositories.DepartmentRepository;
 
+
+// Transform the class into a request controller and give it a route
 @RestController
-@RequestMapping(value = "department")
+@RequestMapping(value = "/department")
 public class DepartmentController {
     @Autowired
     private DepartmentRepository repository;
 
-
-    @GetMapping
+    // GET method will return all departments
+    @GetMapping(value = "/all")
     public List<Department> findAll() {
-
         return repository.findAll();
     }
     @GetMapping(value = "/{id}")
